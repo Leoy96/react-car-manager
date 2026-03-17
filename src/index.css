@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer components{
+    .card{
+        @apply w-70 min-h-72 px-10 py-10 bg-linear-to-bl from-blue-900 to-black rounded-[40px] m-20 inline-block shadow-lg shadow-black/40 max-w-60 text-white text-center 
+    }
+}
+
+@layer base{
+    .style-button{
+        @apply text-slate-700 text-center mt-4 w-30 mx-auto px-3 py-2 bg-lime-600 rounded-2xl font-bold transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer hover:bg-lime-900 hover:text-slate-100 text-sm
+    }
+    .heading-style{
+       @apply m-3 text-[25px] font-bold bg-linear-to-l from-lime-700 to-black text-white text-center py-2
+    }
+    .li-style{
+        @apply m-1 px-3 py-2 hover:text-white w-50 hover:bg-lime-900 transition duration-300 ease-in-out transform hover:scale-110 hover:font-semibold cursor-pointer mx-auto
+    }
+}
